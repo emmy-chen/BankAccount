@@ -9,7 +9,7 @@ public class BankAccount {
     balance = 0;
   }
 
-  public String toString(){
+  public String getInfo(){
     return ("Account ID: " + accountID+", password: "+password+", balance: "+balance);
   }
 
@@ -39,5 +39,9 @@ public class BankAccount {
       return true;
     }
     return false;
+  }
+
+  public String toString() {
+    return (accountID+ "\t" + balance);
   }
 }
