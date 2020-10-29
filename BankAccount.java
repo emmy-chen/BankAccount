@@ -6,7 +6,7 @@ public class BankAccount {
   public BankAccount(int accountID, String password) {
     accountID = accountID;
     password = password;
-    balance = balance;
+    balance = 0;
   }
 
   public String toString(){
@@ -25,4 +25,11 @@ public class BankAccount {
     password = newPass;
   }
 
+  public boolean deposit(double amount) {
+    if ((balance + amount) >= 0) {
+      balance += amount;
+      return true;
+    }
+    return false;
+  }
 }
