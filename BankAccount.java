@@ -9,5 +9,16 @@ public class BankAccount {
     balance = balance;
   }
 
+  public String toString(){
+    return ("Account ID: " + accountID+", password: "+password+", balance: "+balance);
+  }
+
+  public double getBalance() {
+    return (balance);
+  }
+
+  public int getAccountID() {
+    return (accountID);
+  }
 
 }
